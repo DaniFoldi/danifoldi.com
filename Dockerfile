@@ -1,4 +1,4 @@
-FROM node:14
+FROM node:14 as app
 ENV APOS_MINIFY=1
 ENV NODE_ENV=production
 WORKDIR /app
