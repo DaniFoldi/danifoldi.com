@@ -20,3 +20,4 @@ This requires a few bad practices to be followed on this site.
 <input type="submit" value="Submit">
 </form>
 <a href="/about">About</a>
+test@example.com

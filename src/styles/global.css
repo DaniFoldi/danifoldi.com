@@ -57,7 +57,11 @@
 body {
 	margin: 0;
 	color: var(--t-fg);
-	font-family: 'Inter', 'system-ui', sans-serif;
+	font-family: 'Manrope', 'system-ui', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: 'Gantari', 'system-ui', sans-serif;
 }
 
 * {
