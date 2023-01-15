@@ -1,8 +1,0 @@
-#!/bin/bash
-
-mkdir -p data/temp/mongo &&
-# Intentionally in background
-mongod --dbpath ./data/temp/mongo &
-./scripts/docker-wait-for-port localhost:27017 &&
-node app apostrophe:generation &&
-rm -rf ./data/temp/mongo

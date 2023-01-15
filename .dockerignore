@@ -1,5 +1,0 @@
-public/uploads
-data/temp
-node_modules
-# deployment only needed for Stagecoach
-deployment
