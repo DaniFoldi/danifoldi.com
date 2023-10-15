@@ -7,9 +7,19 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "lint": "eslint --cache .",
+    "typecheck": "tsc"
   },
   "dependencies": {
-    "astro": "^3.3.0"
+    "@astrojs/cloudflare": "^7.5.3",
+    "astro": "^3.3.0",
+    "iconoir": "^6.11.0"
+  },
+  "devDependencies": {
+    "bundled-eslint-config": "^0.2.5",
+    "eslint": "^8.51.0",
+    "some-tsconfig-preset": "^1.1.0",
+    "typescript": "^5.2.2"
   }
 }
