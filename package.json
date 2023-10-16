@@ -13,8 +13,10 @@
   },
   "dependencies": {
     "@astrojs/cloudflare": "^7.5.3",
+    "@astrojs/vue": "^3.0.1",
+    "@iconoir/vue": "^6.11.0",
     "astro": "^3.3.0",
-    "iconoir": "^6.11.0"
+    "vue": "^3.3.4"
   },
   "devDependencies": {
     "bundled-eslint-config": "^0.2.5",
