@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@astrojs/cloudflare": "^7.5.3",
+    "@astrojs/mdx": "^1.1.2",
     "@astrojs/vue": "^3.0.1",
     "@iconoir/vue": "^6.11.0",
     "astro": "^3.3.0",
@@ -22,6 +23,7 @@
     "bundled-eslint-config": "^0.2.5",
     "eslint": "^8.51.0",
     "some-tsconfig-preset": "^1.1.0",
-    "typescript": "^5.2.2"
+    "typescript": "^5.2.2",
+    "wrangler": "^3.14.0"
   }
 }

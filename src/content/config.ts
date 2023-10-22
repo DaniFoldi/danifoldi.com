@@ -9,7 +9,8 @@ export const collections = {
       publishDate: z.coerce.date(),
       tags: z.array(z.string()),
       img: z.string(),
-      img_alt: z.string().optional()
+      img_alt: z.string().optional(),
+      type: z.enum(['post', 'project']).default('post')
     })
   })
 }

@@ -253,3 +253,7 @@ h5 {
 		gap: 12rem;
 	}
 }
+
+svg {
+	vertical-align: middle;
+}
