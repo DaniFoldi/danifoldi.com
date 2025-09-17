@@ -1,0 +1,25 @@
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "danifoldi",
+	"account_id": "4afac2ff1d8101bb0852545f1e7783fe",
+	"main": ".open-next/worker.js",
+	"compatibility_date": "2025-07-01",
+	"compatibility_flags": [
+		"nodejs_compat",
+		"global_fetch_strictly_public"
+	],
+	"routes": [
+	  { "zone_name": "danifoldi.com", "pattern": "danifoldi.com/*" },
+		{ "zone_name": "danifoldi.com", "pattern": "www.danifoldi.com/*" }
+	],
+	"assets": {
+		"binding": "ASSETS",
+		"directory": ".open-next/assets"
+	},
+	"observability": {
+		"enabled": true
+	},
+	"ai": {
+		"binding": "AI"
+	}
+}

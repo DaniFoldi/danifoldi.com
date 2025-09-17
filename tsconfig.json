@@ -1,9 +1,0 @@
-{
-  "extends": "some-tsconfig-preset/workers",
-  "include": [
-    "src/**/*"
-  ],
-  "compilerOptions": {
-    "jsx": "preserve"
-  }
-}
