@@ -31,22 +31,7 @@ async function prime(env: CloudflareEnv) {
  */
 export async function adventureAction(input: any[]) {
   let { env } = await getCloudflareContext({ async: true });
-  // Fallback for local development: provide a mock AI if not present
-  if (!env?.AI) {
-    env = {
-      ...env,
-      AI: {
-        run: async (_model: string, { messages }: any) => {
-          // Return a canned response for local/dev
-          const last = messages[messages.length - 1]?.content || "";
-          if (messages.length === 1) {
-            return { response: "You are playing locally. This is a mock story.\nYou are in a mysterious room.\nA: Open the door\nB: Look around\nC: Scream for help\nWhat do you do?" };
-          }
-          return { response: `You chose: ${last}\nA: Option A\nB: Option B\nC: Option C\nWhat do you do?` };
-        },
-      },
-    };
-  }
+
   return input.length === 0
   ? await prime(env)
   : [...input,
